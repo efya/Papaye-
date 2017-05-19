@@ -1,0 +1,29 @@
+
+
+RewriteEngine On    # Turn on the rewriting engine 
+
+ErrorDocument 404 http://localhost/papaye/error.html
+
+RewriteRule    ^admin/?$    admin/index.php    [NC,L]   
+RewriteRule    ^bookservice/?$    bookservice.php    [NC,L]   
+RewriteRule    ^savebookservice/?$    savebookservice.php    [NC,L]   
+
+RewriteRule    ^makebooking/?$    makebooking.php    [NC,L]   
+RewriteRule    ^beautician/([([0-9]+)/(.*)$    beautician.php?id=$1    [NC,L]
+RewriteRule    ^beautician/([([0-9]+)/?$    beautician.php?id=$1    [NC,L]
+
+RewriteRule    ^desserts/([([0-9]+)/(.*)$    desserts.php?id=$1    [NC,L]
+RewriteRule    ^desserts/([([0-9]+)/?$    desserts.php?id=$1    [NC,L]
+
+RewriteRule    ^soups/([([0-9]+)/(.*)$    soups.php?id=$1    [NC,L]
+RewriteRule    ^soups/([([0-9]+)/?$    soups.php?id=$1    [NC,L]
+
+RewriteRule    ^maindishes/([([0-9]+)/(.*)$    maindishes.php?id=$1    [NC,L]
+RewriteRule    ^maindishes/([([0-9]+)/?$    maindishes.php?id=$1    [NC,L]
+
+RewriteRule    ^rice/([([0-9]+)/(.*)$    rice.php?id=$1    [NC,L]
+RewriteRule    ^rice/([([0-9]+)/?$    rice.php?id=$1    [NC,L]
+
+RewriteRule    ^drinks/([([0-9]+)/(.*)$    drinks.php?id=$1    [NC,L]
+RewriteRule    ^drinks/([([0-9]+)/?$    drinks.php?id=$1    [NC,L]
+
